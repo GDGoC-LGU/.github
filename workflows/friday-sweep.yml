@@ -1,0 +1,39 @@
+name: Friday "Good First Issue" Sweep
+
+# Runs every Friday at 10:00 AM PKT (05:00 UTC)
+on:
+  schedule:
+    - cron: '0 5 * * 5'
+  workflow_dispatch: # Allows you to run it manually to test!
+
+jobs:
+  sweep:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Fetch Open Good First Issues
+        id: fetch_issues
+        env:
+          GH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: |
+          # Use GitHub CLI to find open issues with the label
+          ISSUES=$(gh issue list --label "good first issue" --state open --json title,url --jq '.[] | "📌 [" + .title + "](" + .url + ")" ' || echo "")
+          
+          if [ -z "$ISSUES" ]; then
+            echo "No open issues found."
+            echo "has_issues=false" >> $GITHUB_ENV
+          else
+            echo "ISSUES<<EOF" >> $GITHUB_ENV
+            echo "$ISSUES" >> $GITHUB_ENV
+            echo "EOF" >> $GITHUB_ENV
+            echo "has_issues=true" >> $GITHUB_ENV
+          fi
+
+      - name: Send to Discord
+        if: env.has_issues == 'true'
+        run: |
+          # Format the payload for Discord
+          PAYLOAD=$(jq -n --arg content "🚀 **Happy Friday GDGoC LGU!**\nHere are some open beginner issues you can tackle this weekend:\n\n${{ env.ISSUES }}\n\nJump in, claim an issue, and make your first PR!" '{content: $content}')
+          
+          curl -H "Content-Type: application/json" \
+               -d "$PAYLOAD" \
+               ${{ secrets.DISCORD_WEBHOOK_URL }}
