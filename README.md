@@ -1,6 +1,7 @@
 <div align="center">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=700&size=28&pause=1000&color=4285F4&center=true&vCenter=true&width=600&lines=Welcome+to+GDGoC+LGU+👋;Code.+Create.+Connect.+🚀;Empowering+Student+Developers+💻" alt="Typing SVG" />
+  <img src="https://readme-typing-svg.demolab.com/?font=Fira+Code&weight=700&size=28&pause=1000&color=4285F4&center=true&vCenter=true&width=600&lines=Welcome+to+GDGoC+LGU+👋;Code.+Create.+Connect.+🚀;Empowering+Student+Developers+💻" alt="Typing SVG" />
 </div>
+
 
 <div align="center">
   <em>The official open-source and community hub for the <b>Google Developer Group on Campus</b> at Lahore Garrison University.</em>
