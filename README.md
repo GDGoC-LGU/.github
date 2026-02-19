@@ -21,11 +21,11 @@ We welcome contributions from all students! Check out our pinned repositories to
 ### 📊 GDGoC LGU GitHub Stats
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=gdgoclgu&show_icons=true&theme=radical&hide_border=true" alt="GDGoC LGU GitHub Stats" />
+  <img src="https://github-readme-stats.vercel.app/api?username=GDGoC-LGU&show_icons=true&theme=radical&hide_border=true" alt="GDGoC LGU GitHub Stats" />
 </div>
 
 <div align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gdgoclgu&layout=compact&theme=radical&hide_border=true" alt="Top Languages used by GDGoC LGU" />
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=GDGoC-LGU&layout=compact&theme=radical&hide_border=true" alt="Top Languages used by GDGoC LGU" />
 </div>
 
 ---
