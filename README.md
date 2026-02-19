@@ -17,5 +17,16 @@ To bridge the gap between theory and practice by providing a platform for studen
 ### 🤝 Contribute
 We welcome contributions from all students! Check out our pinned repositories to find "Good First Issues" or join our upcoming hackathons.
 
+
+### 📊 GDGoC LGU GitHub Stats
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api?username=gdgoclgu&show_icons=true&theme=radical&hide_border=true" alt="GDGoC LGU GitHub Stats" />
+</div>
+
+<div align="center">
+  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=gdgoclgu&layout=compact&theme=radical&hide_border=true" alt="Top Languages used by GDGoC LGU" />
+</div>
+
 ---
 **Connect with us:** [LinkedIn](https://linkedin.com/company/gdgoclgu) • [Instagram](https://instagram.com/gdgoclgu)
