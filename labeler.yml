@@ -1,0 +1,14 @@
+# Add 'UI/UX' label if any CSS or UI framework files change
+UI/UX:
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.css', '**/*.scss', '**/*.html']
+
+# Add 'Dependencies' label if package files change
+Dependencies:
+  - changed-files:
+      - any-glob-to-any-file: ['package.json', 'package-lock.json']
+
+# Add 'Documentation' label if markdown files change
+Documentation:
+  - changed-files:
+      - any-glob-to-any-file: ['**/*.md']
